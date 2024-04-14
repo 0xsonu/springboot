@@ -41,3 +41,32 @@ You are required to create a basic Spring Boot application with RESTful endpoint
 
 ### Submission:
 - Once completed, share your project code or repository link with your instructor for review.
+
+### Folder Structure 
+
+```
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── com
+│   │   │       └── example
+│   │   │           └── joblistingapp
+│   │   │               ├── controller
+│   │   │               │   └── JobController.java
+│   │   │               ├── model
+│   │   │               │   └── Job.java
+│   │   │               ├── repository
+│   │   │               │   └── JobRepository.java
+│   │   │               └── JobListingAppApplication.java
+│   │   └── resources
+│   │       └── application.properties
+│   └── test
+│       └── java
+│           └── com
+│               └── example
+│                   └── joblistingapp
+│                       └── JobListingAppApplicationTests.java
+└── pom.xml
+```
+
+
