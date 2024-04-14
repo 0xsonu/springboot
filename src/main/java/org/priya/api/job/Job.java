@@ -1,15 +1,22 @@
-package org.priya.api.home;
+package org.priya.api.job;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
+@Entity
 public class Job {
-    private Integer id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String title;
     private double minSalary;
     private double maxSalary;
     private String description;
     private String location;
 
-    public Job(Integer id, String title, double minSalary, double maxSalary, String description, String location) {
+    public Job(Long id, String title, double minSalary, double maxSalary, String description, String location) {
         this.id = id;
         this.title = title;
         this.minSalary = minSalary;
@@ -20,11 +27,11 @@ public class Job {
 
     public Job () {}
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
