@@ -32,6 +32,4 @@ public class JobsController {
         // perform delete operation here
         return "Job " + id + " Deleted!";
     }
-
-
 }

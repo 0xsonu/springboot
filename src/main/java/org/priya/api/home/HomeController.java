@@ -10,7 +10,6 @@ public class HomeController {
     }
 
     @PostMapping("/")
-    @DeleteMapping
     public String greetHi(@RequestParam String name) {
         return "Hello " + name +  "!";
     }
